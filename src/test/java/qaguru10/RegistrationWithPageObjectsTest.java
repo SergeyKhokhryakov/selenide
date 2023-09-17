@@ -44,13 +44,13 @@ public class RegistrationWithPageObjectsTest extends TestBase {
                     .setEmail(email)
                     .setGender(gender)
                     .setPhone(mobPhone)
-                    .setDayOfBirthday(dayOfBirthday, monthOfBirthday, yearOfBirthday)
+                    .setBirthdayDate(dayOfBirthday, monthOfBirthday, yearOfBirthday)
                     .setSubjects(subject1, subject2)
                     .setHobbies(hobby1, hobby2, hobby3)
                     .selectPicture(fileName)
                     .setAddress(address)
                     .setStateAndCity(state, city)
-                    .clickSubmit();
+                    .sendForm();
 
     registrationPage.verifyResultsModalAppears()
                     .verifyResult("Student Name", firstName + " " + lastName)

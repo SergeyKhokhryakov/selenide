@@ -1,7 +1,6 @@
 package qaguru10.pages;
 
-import com.codeborne.selenide.Condition;
-import qaguru10.components.Calendar;
+import qaguru10.components.CalendarComponent;
 import qaguru10.components.RegistrationResultsModal;
 
 import static com.codeborne.selenide.Condition.text;
@@ -9,7 +8,7 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class RegistrationPage {
-  private Calendar calendar = new Calendar();
+  private CalendarComponent calendarComponent = new CalendarComponent();
   private RegistrationResultsModal registrationResultsModal = new RegistrationResultsModal();
   public RegistrationPage openPage(){
     open("/automation-practice-form");
@@ -46,9 +45,9 @@ public class RegistrationPage {
     return this;
   }
 
-  public RegistrationPage setDayOfBirthday(String day, String month, String year){
+  public RegistrationPage setBirthdayDate(String day, String month, String year){
     $("#dateOfBirthInput").click();
-    calendar.chooseDayOfCalendar(day, month, year);
+    calendarComponent.setDate(day, month, year);
     return this;
   }
 
@@ -88,7 +87,7 @@ public class RegistrationPage {
     return this;
   }
 
-  public void clickSubmit(){
+  public void sendForm(){
     $("#submit").click();
   }
 
