@@ -25,7 +25,9 @@ dependencies {
             'io.qameta.allure:allure-rest-assured:2.12.1',
             'io.qameta.allure:allure-java-commons:2.12.1',
             'io.qameta.allure:allure-selenide:2.23.0',
-            'org.slf4j:slf4j-simple:2.0.7'
+            'org.slf4j:slf4j-simple:2.0.7',
+          //  'com.github.javafaker:javafaker:1.0.2',
+            'net.datafaker:datafaker:1.9.0'
     )
 }
 
