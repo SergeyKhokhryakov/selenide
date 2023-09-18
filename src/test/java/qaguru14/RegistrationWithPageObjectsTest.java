@@ -1,19 +1,13 @@
-package qaguru10;
+package qaguru14;
 
-import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.logevents.SelenideLogger;
-import io.qameta.allure.selenide.AllureSelenide;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import qaguru10.pages.RegistrationPage;
-import qaguru10.pages.TestBase;
+import qaguru14.pages.TestBase;
 
-import static com.codeborne.selenide.Condition.appear;
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.*;
-
+/**
+ * Using Faker library
+ *
+ */
 
 public class RegistrationWithPageObjectsTest extends TestBase {
 

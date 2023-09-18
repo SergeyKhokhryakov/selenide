@@ -1,4 +1,4 @@
-package qaguru10.pages;
+package qaguru14.pages;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;

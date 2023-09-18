@@ -1,7 +1,7 @@
-package qaguru10.pages;
+package qaguru14.pages;
 
-import qaguru10.components.CalendarComponent;
-import qaguru10.components.RegistrationResultsModal;
+import qaguru14.components.CalendarComponent;
+import qaguru14.components.RegistrationResultsModal;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;

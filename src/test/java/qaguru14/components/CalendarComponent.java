@@ -1,4 +1,4 @@
-package qaguru10.components;
+package qaguru14.components;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
