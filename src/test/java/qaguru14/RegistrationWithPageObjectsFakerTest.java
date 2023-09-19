@@ -1,38 +1,20 @@
 package qaguru14;
 
 import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.RepeatedTest;
 import qaguru14.pages.TestBase;
-import qaguru14.pages.TestData;
 
 /**
  * //Using Faker library
  * Using Datafaker library
  */
 
-public class RegistrationWithPageObjectsTest extends TestBase {
+public class RegistrationWithPageObjectsFakerTest extends TestBase {
 
-  @Test
+
   @DisplayName("Проверка формы Student Registration Form https://demoqa.com/automation-practice-form")
+  @RepeatedTest(2)
   void testStudentRegistrationFormTest(){
-    TestData data = new TestData();
-//    String firstName = "Petr";
-//    String lastName = "Stuckov";
-//    String email = "my-email@gmail.com";
-//    String gender = "Male";
-//    String mobPhone = "9631112233";
-//    String yearOfBirthday = "1960";
-//    String monthOfBirthday = "December";
-//    String dayOfBirthday = "9";
-//    String subject1 = "Computer Science";
-//    String subject2 = "Economics";
-//    String address = "г. Тобол, ул. Терезы, д.5. кор. 1 кв.1";
-//    String state = "Rajasthan";
-//    String city = "Jaipur";
-//    String fileName = "TestNG_vs_JUnit5.png";
-//    String hobby1 = "Sports";
-//    String hobby2 = "Reading";
-//    String hobby3 = "Music";
 
     registrationPage.openPage()
                     .setFirstName(data.firstName)
